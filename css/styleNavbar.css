@@ -13,3 +13,20 @@
 .nav-item > a:hover{
     color: #909f43;
 }
+
+.d-flex button{
+    color: #f5e1b9;
+    border-color: #f5e1b9;
+}
+.d-flex{
+    color: #f5e1b9;
+}
+
+.d-flex button :active{
+    color: #f5e1b9;
+}
+
+.d-flex button :focus{
+    color: #f5e1b9;
+}
+
