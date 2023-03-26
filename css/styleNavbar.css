@@ -30,3 +30,16 @@
     color: #f5e1b9;
 }
 
+.container .d-flex {
+    color: black;
+}
+
+.navbar-custom .container-fluid .btn a i{
+    font-size: 30px;
+    color: #f5e1b9;
+
+}
+
+.navbar-custom .container-fluid .btn :hover{
+    color: #909f43;
+}

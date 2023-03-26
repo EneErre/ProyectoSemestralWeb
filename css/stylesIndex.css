@@ -5,7 +5,7 @@
     position: relative;
 }
 
-.container{
+.carousel-item .container {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -21,4 +21,19 @@
     background-position: center;
     background-size: cover;
     opacity: 0.5;
+}
+
+.mensajeInicio {
+    text-align: center;
+    font-size: 50px;
+    color: #f6d573;
+    
+}
+body{
+    background-color: #495635;
+}
+
+.card img{
+    height: 300px;
+    width: 275px;
 }
