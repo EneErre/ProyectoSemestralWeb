@@ -18,6 +18,13 @@
     color: #f5e1b9;
     border-color: #f5e1b9;
 }
+
+.navbar-custom .container-fluid .collapse .formSearch .btnSearch:hover{
+    background-color: #909f43;
+    color: #f5e1b9;
+    border-color: #909f43;
+}
+
 .d-flex{
     color: #f5e1b9;
 }

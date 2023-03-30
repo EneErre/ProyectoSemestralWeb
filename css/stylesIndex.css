@@ -37,3 +37,13 @@ body{
     height: 300px;
     width: 275px;
 }
+
+.col a{
+    text-decoration: none;
+    color: #464232;
+}
+.col a :hover{
+    color: #bb8a44;
+}
+
+
