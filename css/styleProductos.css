@@ -1,0 +1,33 @@
+.rowDescripcionProducto{
+    border: solid #5a5034;
+    background-color: #80673b;
+    color: #f5e1b9;
+}
+.imgProducto{
+    width: 350px;
+    height: 350px;
+}
+
+body{
+    background-color: #5f6f3a;
+}
+
+.nombreProducto{
+    color: #f5e1b9;
+
+}
+.precioProducto{
+    border: solid #5a5034;
+    background-color: #80673b;
+    color: #f5e1b9;
+}
+.compraProducto{
+    border: solid #5a5034;
+    background-color: #80673b;
+    color: #f5e1b9;
+}
+.agregarProducto{
+    border: solid #5a5034;
+    background-color: #80673b;
+    color: #f5e1b9;
+}

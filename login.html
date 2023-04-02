@@ -9,8 +9,8 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styleNavbar.css">
-    <link rel="stylesheet" href="css/styleCarrito.css">
-    <title>Carrito de compra</title>
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <title>Login</title>
 </head>
 
 <body>
@@ -58,86 +58,63 @@
             </div>
         </div>
     </nav>
-    <div class="container pb-5">
-        <h1 class="text-center">Carrito de compra</h1>
+
+
+
+    <div class="container">
+        <h1>Login</h1>
+        <form action="">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                                required>
+                            <label for="floatingInput">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                required>
+                            <label for="floatingPassword">Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <a class="btn btn-primary" href="#" role="button">Crear cuenta</a>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Iniciar sesion
+                        </button>
+                    </div>
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mensaje inicio sesion</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Sesion iniciada
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
     </div>
 
-
-    <div class="container text-center">
-
-        <div class="row mostrarCarrito">
-            <div class="col">
-                <p>Producto</p>
-            </div>
-            <div class="col">
-                <p>Nombre producto:</p>
-            </div>
-            <div class="col">
-                <p>Codigo producto:</p>
-            </div>
-            <div class="col">
-                <p>Valor producto:</p>
-
-            </div>
-            <div class="col">
-                <p>Eliminar producto:</p>
-            </div>
-        </div>
-
-        <div class="row mostrarCarrito mt-2">
-            <div class="col">
-                <img src="img/png/flores/tulipan.png" alt="">
-            </div>
-            <div class="col">
-                <p class="m-5"> Tulipan variedad</p>
-            </div>
-            <div class="col">
-                <p class="m-5"> #26808</p>
-            </div>
-            <div class="col">
-                <p class="m-5"> $2.000</p>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary mt-5 btn-lg btn-danger"> X</button>
-            </div>
-        </div>
-
-        <div class="row mostrarCarrito mt-2">
-            <div class="col">
-                <img src="img/png/flores/girasoles.png" alt="">
-            </div>
-            <div class="col">
-                <p class="m-5"> Girasoles</p>
-            </div>
-            <div class="col">
-                <p class="m-5"> #26777</p>
-            </div>
-            <div class="col">
-                <p class="m-5"> $1.000</p>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary mt-5 btn-lg btn-danger"> X</button>
-            </div>
-        </div>
-
-        <div class="row mostrarCarrito mt-2">
-            <div class="col">
-                <img src="img/png/herramientasJardineria/conjuntoHerramientas.png" alt="">
-            </div>
-            <div class="col">
-                <p class="m-5"> Conjunto de herramientas</p>
-            </div>
-            <div class="col">
-                <p class="m-5"> #12345</p>
-            </div>
-            <div class="col">
-                <p class="m-5"> $10.000</p>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary mt-5 btn-lg btn-danger"> X</button>
-            </div>
-        </div>
-    </div>
 
 
 
