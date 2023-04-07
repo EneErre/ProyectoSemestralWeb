@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleNavbar.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <title>Formulario</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">L4G</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="listaProductos.html">Flores</a></li>
+                            <li><a class="dropdown-item" href="listaProductos.html">Maceteros</a></li>
+                            <li><a class="dropdown-item" href="listaProductos.html">Herramientas de jardineria</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <button class="btn ms-3" type="submit">
+                    <a href="carrito.html">
+                        <i class="material-icons">shopping_cart</i>
+                    </a>
+                </button>
+                <button class="btn ms-3" type="submit">
+                    <a href="login.html">
+                        <i class="material-icons">account_box</i>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container mt-5">
+        <h3 class="tituloInicio">Crear cuenta</h3>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su nombre">
+                    <label for="floatingInput">Ingrese su nombre:</label>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su apellido">
+                    <label for="floatingInput">Ingrese su apellido:</label>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su correro">
+                    <label for="floatingInput">Ingrese su nombre de usuario:</label>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="12.345.678-9">
+                    <label for="floatingInput">Ingrese su rut:</label>
+                </div>
+            </div>
+
+
+            <div class="col-lg-12 mt-3 mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected disabled>Genero</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Sin especificar</option>
+                </select>
+            </div>
+
+
+            <div class="col-lg-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su correro">
+                    <label for="floatingInput">Ingrese su correo:</label>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-12 mt-3">
+                <a class="btn btn-primary" href="login.html" role="button">Cancelar</a>
+
+            </div>
+            <div class="col-lg-6 col-md-12 mt-3">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Crear cuenta
+                  </button>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          Cuenta creada exitosamente.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
