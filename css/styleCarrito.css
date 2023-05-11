@@ -1,28 +1,30 @@
-
-
-body{
-    background-color: #5a5034;
+p{
+    font-size: 30px;
 }
 
-.container .mostrarCarrito{
-    background-color: #5f6f3a;
+.container .row .col img{
+    width: 150px;
+    height: 150px;
+}
+#nombreProducto{
+    font-size: 25px;
+    padding-top: 10%;
+}
+#descripcionProducto{
+    font-size: 25px;
+    padding-top: 10%;
+}
+#cantidadProductos{
+    font-size: 30px;
 }
 
-.container .mostrarCarrito img{
-    height: 125px;
-    width: 125px;
+.row{
+    border-bottom: solid black;
 }
 
-.container .mostrarCarrito .col{
-    border: solid #5a5034;
+.btn{
+    background-color: #c7a15f;
 }
-
-.container .row .col p{
-    font-size: 20px;
-    color: #f5e1b9;
+.btn:hover{
+    background-color: #966e29;
 }
-
-.container h1{
-    color: #f5e1b9;
-}
-

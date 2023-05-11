@@ -1,5 +1,5 @@
 .navbar-custom{
-    background-color: #80673b;
+    background-color: #b69357;
 }
 
 .navbar-custom .navbar-brand{
@@ -11,7 +11,7 @@
 }
 
 .nav-item > a:hover{
-    color: #909f43;
+    color: #bcd155;
 }
 
 .d-flex button{
@@ -20,7 +20,7 @@
 }
 
 .navbar-custom .container-fluid .collapse .formSearch .btnSearch:hover{
-    background-color: #909f43;
+    background-color: #cbe060;
     color: #f5e1b9;
     border-color: #909f43;
 }
@@ -48,5 +48,5 @@
 }
 
 .navbar-custom .container-fluid .btn :hover{
-    color: #909f43;
+    color: #d8f064;
 }
