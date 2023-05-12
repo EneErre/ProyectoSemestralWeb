@@ -1,24 +1,10 @@
-body{
-    background-color: #8e7d69;
+#filtroProductos{
+    border: solid rgb(126, 126, 126);
+    background-color: #e7cb9a;
+    border-radius: 10px;
 }
 
-.card-img-top{
-    width: 300px;
+.card img{
     height: 300px;
-}
-
-.containerFiltro{
-    background-color: #f5e1b9;
-}
-
-.tituloInicio{
-    color: #f5e1b9;
-}
-.btnPersonalizado{
-    background-color: #909f43;
-    color: #f5e1b9;
-}
-.btnPersonalizado:hover{
-    background-color: #717c37;
-    color: #f7f2ea;
+    width: 275px;
 }
