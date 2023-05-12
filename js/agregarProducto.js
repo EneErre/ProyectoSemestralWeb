@@ -22,11 +22,40 @@ function verificarDatos(){
     console.log(descripcion);
     console.log(precio);
 
+ if (nombre.length <= 3) {
+        document.getElementById("txtNombre").classList.add("is-invalid");
+        document.getElementById("errorNombre").style.display = "block"
+        
+    }else{
+        document.getElementById("errorNombre").style.display = "none";
+        document.getElementById("txtNombre").classList.remove("is-invalid");
+        document.getElementById("txtNombre").classList.add("is-valid");
+    }
+
+    if(descripcion.length <= 10){
+        document.getElementById("txtDescripcion").classList.add("is-invalid");
+        document.getElementById("errorDescripcion").style.display="block";
+    }else{
+        document.getElementById("errorDescripcion").style.display="none";
+        document.getElementById("txtDescripcion").classList.remove("is-invalid");
+        document.getElementById("txtDescripcion").classList.add("is-valid");
+    }
+
+console.log(typeof precio);
+
+    if(precio < "1000"){
+        document.getElementById("precioProduc").classList.add("is-invalid");
+        document.getElementById("errorPrecio").style.display= "block";
+    }else{
+        document.getElementById("errorPrecio").style.display="none";
+        document.getElementById("precioProduc").classList.remove("is-invalid");
+        document.getElementById("precioProduc").classList.add("is-valid");
+    }
     
     
     
 
-
+//No tocar COMIENZO
     let jsonUrl = localStorage.getItem("urlImg");
     let arrayUrl = JSON.parse(jsonUrl);
     
@@ -55,4 +84,5 @@ function verificarDatos(){
     let stringProductos = JSON.stringify(arrayProductos);
 
     localStorage.setItem("storageProductos", stringProductos)
+    //No tocar FIN 
 }
