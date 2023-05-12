@@ -1,0 +1,11 @@
+.flex-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    width: 20%;
+    background-color: grey;
+    padding: 32px;
+    box-sizing: border-box;
+    left: 80%;
+}

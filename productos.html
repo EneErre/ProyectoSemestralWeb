@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styleNavbar.css">
     <link rel="stylesheet" href="css/styleListaProductos.css">
+    <link rel="stylesheet" href="css/styleMensajeAgregado.css">
     <title>Productos</title>
 </head>
 
@@ -73,17 +74,23 @@
 
 
 
+    <div class="flex-container">
+        <h3>Se ha agregado un producto</h3>
+</div>
+
+
 
     <div class="container text-center">
         <h1>Productos</h1>
         <div class="row">
-            <div id="filtroProductos" class="container">
-                <h3>Filtro de busqueda</h3>
+            <div id="filtroProductos" class="col col-lg-3 mt-3">
+                    <h3>Filtro de busqueda</h3>
+                <label for="">Categoria</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                    <option disabled selected value="null">Categoria</option>
-                    <option value="1">Planta</option>
-                    <option value="2">Macetero</option>
-                    <option value="3">Herramienta de jardineria</option>
+                    <option selected value="1">Todos</option>
+                    <option value="2">Planta</option>
+                    <option value="3">Macetero</option>
+                    <option value="4">Herramienta de jardineria</option>
                 </select>
                 <label for="">valor minimo</label>
                 <input type="text" class="form-control">
@@ -100,9 +107,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 
 
 

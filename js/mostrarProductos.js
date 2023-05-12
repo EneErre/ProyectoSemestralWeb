@@ -99,4 +99,7 @@ function agregarProducto(x){
     let insertarJsonCarrito = JSON.stringify(arrayCarrito);
     localStorage.setItem("storageCarrito", insertarJsonCarrito);
 
+    $("#mensajeAgregado").fadeIn();
 };
+
+
