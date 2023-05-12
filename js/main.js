@@ -87,9 +87,10 @@ $(document).ready(function(){
         let imagen = i.img;
         let nombre = i.nombre;
         let precio = i.precio;
+        let descripcion = i.descripcion;
         let html = $(`<div class="row mt-3">
             <div class="card" style="width: 18rem;">
-            <img src=${imagen} class="card-img-top" alt="...">
+            <img src=${imagen} class="card-img-top" alt="${descripcion}}">
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
                     <p class="card-text">Precio: ${precio}</p>

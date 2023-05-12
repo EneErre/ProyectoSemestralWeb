@@ -12,11 +12,18 @@ $(function(){
 
 });
 
-$("#agregarProducto").on("click",function(){
-    let tipo = $("#tipoProducto").val();
-    let nombre = $("#txtNombre").val();
-    let descripcion = $("#txtDescripcion").val();
-    let precio = $("#precioProduc").val();
+
+function verificarDatos(){
+    let nombre = document.getElementById("txtNombre").value;
+    let descripcion = document.getElementById("txtDescripcion").value;
+    let precio = document.getElementById("precioProduc").value;
+    let tipo = document.getElementById("tipoProducto").value;
+    console.log(nombre);
+    console.log(descripcion);
+    console.log(precio);
+
+    
+    
     
 
 
@@ -48,5 +55,4 @@ $("#agregarProducto").on("click",function(){
     let stringProductos = JSON.stringify(arrayProductos);
 
     localStorage.setItem("storageProductos", stringProductos)
-
-})
+}
