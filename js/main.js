@@ -1,3 +1,4 @@
+//
 $(document).ready(function(){
     let carritoJson = localStorage.getItem("storageCarrito");
     let carritoArray = JSON.parse(carritoJson);
