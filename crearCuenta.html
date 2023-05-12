@@ -72,76 +72,37 @@
         </div>
     </nav>
 
-
-
-    <div class="container mt-5">
-        <h3>Crear cuenta</h3>
-        <form action="" id="crearCuenta">
-        <div class="row mt-5">
-            <div class="col-lg-6 col-md-12">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
-                    <label for="txtNombre">Ingrese su nombre:</label>
-                </div>
-            </div>
-
-
-            <div class="col-lg-6 col-md-12">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese su apellido">
-                    <label for="txtApellido">Ingrese su apellido:</label>
-                </div>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtNombreCuenta" placeholder="Ingrese su correro">
-                    <label for="txtNombreCuenta">Ingrese su nombre de usuario:</label>
-                </div>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtContrasenia" placeholder="Ingrese su correro">
-                    <label for="txtContrasenia">Ingrese la contraseña de su cuenta:</label>
-                </div>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="txtRut" placeholder="12.345.678-9">
-                    <label for="txtRut">Ingrese su rut:</label>
-                </div>
-            </div>
-
-
-            <div class="col-lg-12 mt-3 mb-3">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>Genero</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Femenino</option>
-                    <option value="3">Sin especificar</option>
-                </select>
-            </div>
-
-
-            <div class="col-lg-12">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su correro">
-                    <label for="floatingInput">Ingrese su correo:</label>
-                </div>
-            </div>
-
-            <div class="col mt-3 col-lg-6">
-                <div class="d-grid gap-2">
-                    <button id="btnCrearCuenta" class="btn btn-outline-success" type="submit">Crear Cuenta</button>
-                </div>
-    
-            </div>
+  <div class="container">
+    <h1>Crear Cuenta</h1>
+    <div class="row">
+        <div class="col">
+            <label for="txtNombre">Nombre</label>
+            <input class="form-control mt-2" type="text" id="txtNombre" placeholder="Ingrese su nombre">
             
+            <label for="txtApellido">Apellido</label>
+            <input class="form-control mt-2" type="text" id="txtApellido" placeholder="Ingrese su Apellido">
+            
+            <label for="txtNombreCuenta">Nombre Cuenta</label>
+            <input class="form-control mt-2" type="text" id="txtNombreCuenta" placeholder="Ingrese el nombre de la cuenta">
+            
+            <label for="txtRut">Ingrese Rut</label>
+            <input class="form-control mt-2" type="text" id="txtRut" placeholder="Ingrese su rut">
+            
+            <label for="txtCorreo">Ingrese Correo</label>
+            <input class="form-control mt-2" type="text" id="txtCorreo" placeholder="Ingrese su rut">
+    
+            <label for="txtCorreo">Ingrese Contraseña</label>
+            <input class="form-control mt-2" type="text" id="txtContraseña" placeholder="Ingrese su contraseña">
+            
+            <select class="form-select mt-3" aria-label="Default select example">
+                 <option selected>Genero</option>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+              </select>
         </div>
-    </form>
+        <button class="btn btn-success mt-2" type="submit" onclick="guardarDatos()">Guardar</button>
     </div>
+  </div>
 
 
 
