@@ -34,7 +34,7 @@ function crearCuenta(){
         document.getElementById("txtApellido").classList.add("is-valid");
     }
 
-    if (nombreCuenta.length ==0){
+    if (nombreCuenta.length == 0){
         document.getElementById("valNombreCuenta").style.display="inline";
         document.getElementById("txtNombreCuenta").classList.add("is-invalid");
     }else{
