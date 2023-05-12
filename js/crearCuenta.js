@@ -1,45 +1,41 @@
-function crearCuenta(){
-        let rut = document.getElementById("txtRut").value;
-        let nombre = document.getElementById("txtNombre").value;
-        let apellido = document.getElementById("txtApellido").value;
-        let nombreCuenta = document.getElementById("txtNombreCuenta").value;
+function guardarDatos() {
+
+    var nombre = document.getElementById('txtNombre').value;
+    var apellido = document.getElementById('txtApellido').value;
+    var nombreCuenta = document.getElementById('txtNombreCuenta').value;
+    var rut = document.getElementById('txtRut').value;
+    var correo = document.getElementById('txtCorreo').value;
+    var contraseña = document.getElementById('txtContraseña').value;
+
     
+ 
+    console.log('Nombre:', nombre);
+    console.log('Apellido:', apellido);
+    console.log('Nombre de cuenta:', nombreCuenta);
+    console.log('Rut:', rut);
+    console.log('Correo:', correo);
+    console.log('Contraseña:', contraseña);
 
-    if (rut.length == 0) {
-        document.getElementById("valRut").style.display = "inline";
-        document.getElementById("txtRut").classList.add("is-invalid");
-    }else{
-        document.getElementById("valRut").style.display = "none";
-        document.getElementById("txtRut").classList.remove("is-invalid");
-        document.getElementById("txtRut").classList.add("is-valid");
-    }
+    
+    validarFormulario()
+    alert('Los datos se han guardado correctamente.');
 
-
-    if (nombre.length == 0) {
-        document.getElementById("valNombre").style.display = "inline";
-        document.getElementById("txtNombre").classList.add("is-invalid");
-    }else{
-        document.getElementById("valNombre").style.display = "none";
-        document.getElementById("txtNombre").classList.remove("is-invalid");
-        document.getElementById("txtNombre").classList.add("is-valid");
-    }
+}
 
 
-    if (apellido.length == 0) {
-        document.getElementById("valApellido").style.display = "inline";
-        document.getElementById("txtApellido").classList.add("is-invalid");
-    }else{
-        document.getElementById("valApellido").style.display = "none";
-        document.getElementById("txtApellido").classList.remove("is-invalid");
-        document.getElementById("txtApellido").classList.add("is-valid");
-    }
 
-    if (nombreCuenta.length == 0){
-        document.getElementById("valNombreCuenta").style.display="inline";
-        document.getElementById("txtNombreCuenta").classList.add("is-invalid");
-    }else{
-        document.getElementById("valNombreCauenta").style.display = "none";
-        document.getElementById("txtNombreCuenta").classList.remove("is-invalid");
-        document.getElementById("txtNombreCuenta").classList.add("is-valid");
+function validarFormulario() {
+
+    var nombre = document.getElementById("txtNombre").value;
+    var apellido = document.getElementById("txtApellido").value;
+    var nombreCuenta = document.getElementById("txtNombreCuenta").value;
+    var rut = document.getElementById("txtRut").value;
+    var correo = document.getElementById("txtCorreo").value;
+    var contraseña = document.getElementById("txtContraseña").value;
+    
+   
+    if (nombre === '' || apellido === '' || nombreCuenta === '' || rut === '' || correo === '' || contraseña === '') {
+      alert('Por favor, complete todos los campos obligatorios.');
+      return false; 
     }
 }
