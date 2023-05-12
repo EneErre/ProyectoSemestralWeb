@@ -27,18 +27,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  
+          
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Productos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="listaProductos.html">Flores</a></li>
-                            <li><a class="dropdown-item" href="listaProductos.html">Maceteros</a></li>
-                            <li><a class="dropdown-item" href="listaProductos.html">Herramientas de jardineria</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Flores</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Maceteros</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Herramientas de jardineria</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Administrador
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="agregarProducto.html">Agregar producto</a></li>
+                          <li><a class="dropdown-item" href="#">Listar Productos</a></li>
+                      </ul>
+                  </li>
+                    
                 </ul>
+                        
+  
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -59,36 +74,42 @@
 
 
 
-
     <div class="container mt-5">
         <h3 class="tituloInicio">Crear cuenta</h3>
         <div class="row mt-5">
             <div class="col-lg-6 col-md-12">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su nombre">
-                    <label for="floatingInput">Ingrese su nombre:</label>
+                    <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
+                    <label for="txtNombre">Ingrese su nombre:</label>
                 </div>
             </div>
 
 
             <div class="col-lg-6 col-md-12">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su apellido">
-                    <label for="floatingInput">Ingrese su apellido:</label>
+                    <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese su apellido">
+                    <label for="txtApellido">Ingrese su apellido:</label>
                 </div>
             </div>
 
             <div class="col-lg-12">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su correro">
-                    <label for="floatingInput">Ingrese su nombre de usuario:</label>
+                    <input type="text" class="form-control" id="txtNombreCuenta" placeholder="Ingrese su correro">
+                    <label for="txtNombreCuenta">Ingrese su nombre de usuario:</label>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txtContrasenia" placeholder="Ingrese su correro">
+                    <label for="txtContrasenia">Ingrese la contraseña de su cuenta:</label>
                 </div>
             </div>
 
             <div class="col-lg-12">
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="12.345.678-9">
-                    <label for="floatingInput">Ingrese su rut:</label>
+                    <input type="text" class="form-control" id="txtRut" placeholder="12.345.678-9">
+                    <label for="txtRut">Ingrese su rut:</label>
                 </div>
             </div>
 

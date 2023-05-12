@@ -78,9 +78,11 @@ $(document).ready(function(){
     let jsonProductos = localStorage.getItem("storageProductos");
     let arrayProductos = JSON.parse(jsonProductos);
 
+    let cantidad = 1
     let rowProductos = $("#rowProductosDestacados");
     for (const i of arrayProductos) {
-        let codigo = i.codigo;
+        if (cantidad <= 6){
+            let codigo = i.codigo;
         let imagen = i.img;
         let nombre = i.nombre;
         let precio = i.precio;
@@ -96,6 +98,10 @@ $(document).ready(function(){
                 </div>
         </div>`);
         rowProductos.append(html);
+        }else{
+            break;
+        }
+        
     }
 
     
