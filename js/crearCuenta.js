@@ -6,7 +6,7 @@ function validarFormulario() {
     var rut = document.getElementById('txtRut').value;
     var correo = document.getElementById('txtCorreo').value;
     var contrasenia = document.getElementById('txtContrasenia').value;
-    let 
+    
 
     let cumpleNombre = false;
     let cumpleApellido = false;
