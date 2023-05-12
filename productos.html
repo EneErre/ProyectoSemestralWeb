@@ -75,203 +75,28 @@
 
 
     <div class="container text-center">
+        <h1>Productos</h1>
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="tituloInicio">Productos</h1>
+            <div id="filtroProductos" class="container">
+                <h3>Filtro de busqueda</h3>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option disabled selected value="null">Categoria</option>
+                    <option value="1">Planta</option>
+                    <option value="2">Macetero</option>
+                    <option value="3">Herramienta de jardineria</option>
+                </select>
+                <label for="">valor minimo</label>
+                <input type="text" class="form-control">
+                <label for="">Valor maximo</label>
+                <input type="text" class="form-control">
+                <button class="btn btn-primary mt-3">
+                    Aplicar filtro
+                </button>
+                <br>
+                <br>
             </div>
-            <div class="col-lg-3">
-                <div class="container containerFiltro">
-                    <div class="row mt-5">
-                        <div class="col-lg-12">
-                            <h4>Filtro productos</h4>
-                        </div>
-                        <div class="col-lg-12 mb-3 mt-3">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">
-                                    <h5>Envio gratis</h5>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 mt-3">
-                            <h5>Tipo producto</h5>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Todos</option>
-                                <option value="1">Flores</option>
-                                <option value="2">Maceteros</option>
-                                <option value="3">Herramientas de jardineria</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-12 mt-3">
-                            <h5>Rango de precio</h5>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="1000">
-                                <label for="floatingInput">Minimo</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="100000">
-                                <label for="floatingPassword">Maximo</label>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 mt-3 mb-3">
-                            <button type="button" class="btn btn-primary">Aplicar filtro</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col muestaImagenes">
-                <div class="row mt-5 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <a href="ventaProducto.html">
-                                <img src="img/png/flores/girasoles.png" class="card-img-top" alt="...">
-                            </a>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Girasoles</h5>
-                                <p class="card-text">Precio: $1000</p>
-                                <button type="button" class="btn btnPersonalizado" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-        <!-- Button trigger modal -->
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-body">
-                        <h5>Producto agregado al carrito</h5>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <div class="col">
+                <div id="rowProductos" class="row">
                 </div>
             </div>
         </div>
@@ -287,12 +112,15 @@
 
 
 
+
+    <script src="js/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    <script src="js/mostrarProductos.js"></script>
 </body>
 
 </html>
