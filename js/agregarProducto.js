@@ -32,7 +32,7 @@ function verificarDatos(){
         document.getElementById("txtNombre").classList.add("is-valid");
     }
 
-    if(descripcion.length <= 10){
+    if(descripcion.length < 10){
         document.getElementById("txtDescripcion").classList.add("is-invalid");
         document.getElementById("errorDescripcion").style.display="block";
     }else{
@@ -43,7 +43,7 @@ function verificarDatos(){
 
 console.log(typeof precio);
 
-    if(precio < "1000"){
+    if(precio < 1000){
         document.getElementById("precioProduc").classList.add("is-invalid");
         document.getElementById("errorPrecio").style.display= "block";
     }else{
