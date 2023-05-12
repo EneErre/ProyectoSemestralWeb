@@ -75,33 +75,50 @@
   <div class="container">
     <h1>Crear Cuenta</h1>
     <div class="row">
-        <div class="col">
+        <div class="col col-lg-12">
             <label for="txtNombre">Nombre</label>
             <input class="form-control mt-2" type="text" id="txtNombre" placeholder="Ingrese su nombre">
+            <p class="mensajeError" id="errorNombre">Debe ingresar un nombre</p>
+            
             
             <label for="txtApellido">Apellido</label>
             <input class="form-control mt-2" type="text" id="txtApellido" placeholder="Ingrese su Apellido">
+            <p class="mensajeError"  id="errorApellido">Debe ingresar un apellido</p>
             
             <label for="txtNombreCuenta">Nombre Cuenta</label>
             <input class="form-control mt-2" type="text" id="txtNombreCuenta" placeholder="Ingrese el nombre de la cuenta">
+            <p class="mensajeError"  id="errorNombreCuenta">Debe ingresar un nombre de cuenta que tenga al menos 5 caracteres</p>
             
             <label for="txtRut">Ingrese Rut</label>
             <input class="form-control mt-2" type="text" id="txtRut" placeholder="Ingrese su rut">
+            <p class="mensajeError"  id="errorRut">Debe ingresar un rut valido</p>
             
             <label for="txtCorreo">Ingrese Correo</label>
             <input class="form-control mt-2" type="text" id="txtCorreo" placeholder="Ingrese su rut">
+            <p class="mensajeError"  id="errorCorreo">debe ingresar un correo valido</p>
     
-            <label for="txtCorreo">Ingrese Contraseña</label>
-            <input class="form-control mt-2" type="text" id="txtContraseña" placeholder="Ingrese su contraseña">
+            <label for="txtContrasenia">Ingrese Contraseña</label>
+            <input class="form-control mt-2" type="text" id="txtContrasenia" placeholder="Ingrese su contraseña">
+            <p class="mensajeError"  id="errorContrasenia">Debe ingresar una contraseña de al menos 8 caracteres</p>
             
             <select class="form-select mt-3" aria-label="Default select example">
-                 <option selected>Genero</option>
+                 <option selected disabled value="null">Genero</option>
                 <option value="1">Hombre</option>
                 <option value="2">Mujer</option>
               </select>
+        </div>    
+        <div class="col mt-3 col-lg-6">
+            <div class="d-grid gap-2">
+                <button class="btn btn-danger mt-2" type="submit" onclick="">Vaciar</button>
+            </div>
         </div>
-        <button class="btn btn-success mt-2" type="submit" onclick="guardarDatos()">Guardar</button>
+        <div class="col mt-3 col-lg-6">
+            <div class="d-grid gap-2">
+                <button class="btn btn-success mt-2" type="submit" onclick="validarFormulario()">Guardar</button>
+            </div>
+        </div>
     </div>
+        
   </div>
 
 
