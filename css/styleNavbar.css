@@ -148,3 +148,7 @@
 .navbar-oscuro .dropdown-item{
     color: black;
 }
+
+.navbar-oscuro .iconClaro{
+    color: white;
+}

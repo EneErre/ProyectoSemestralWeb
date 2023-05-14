@@ -33,11 +33,11 @@
 }
 
 .headerProductosClaros{
-    color: white;
+    color: black;
 }
 
 .headerProductosOscuros{
-    color: black;
+    color: white;
 }
 
 .card img{

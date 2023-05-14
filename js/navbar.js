@@ -83,15 +83,17 @@ function relojNavbar(){
 //Funcion para cambiar el tema.
 $("#cambiarTema").on("change",function(){
     if ($("#cambiarTema").val() == "on"){
+        console.log($("#cambiarTema").val());
         $("#cambiarTema").attr("value","of") 
         $("#navbar").attr("class","navbar navbar-expand-lg navbar-oscuro");
         $(".bodyClaro").attr("class","bodyOscuro")
         $(".headerProductosClaros").attr("class","headerProductosOscuros")
     } else{
-        $("#cambiarTema").attr("value","on") 
         console.log($("#cambiarTema").val());
+        $("#cambiarTema").attr("value","on") 
         $("#navbar").attr("class","navbar navbar-expand-lg navbar-claro");
         $(".headerProductosOscuros").attr("class","headerProductosClaros")
+        $(".bodyOscuro").attr("class","bodyClaro")
     }
     
     
