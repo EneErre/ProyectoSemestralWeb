@@ -13,7 +13,7 @@ $(function(){
         let precio = i.precio;
         let cantidad = i.cantidad;
         let precioTotal = precio * cantidad;
-        let html = $(`<div id="prodCod${codigo}" class="row mt-3">
+        let html = $(`<div id="prodCod${codigo}" class="row mt-3 rowProducto">
         <div class="col">
             <img src=${imagen} alt="" srcset="">
         </div>
@@ -22,9 +22,9 @@ $(function(){
         </div>
         <div class="col">
             <p id="cantidadProductos${codigo}"> ${cantidad} </p>
-            <button onclick="quitarCantidad(${codigo})" id="btnQuitarCantidad" class="btn"> 
+            <button onclick="quitarCantidad(${codigo})" id="btnQuitarCantidad" class="btn btnCarrito"> 
                 <i class="material-icons">exposure_neg_1</i></button>
-            <button onclick="agregarCantidad(${codigo})" id="btnAgregarCantidad" class="btn">
+            <button onclick="agregarCantidad(${codigo})" id="btnAgregarCantidad" class="btn btnCarrito">
                 <i class="material-icons">exposure_plus_1</i>
             </button>  
             

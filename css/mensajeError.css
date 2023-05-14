@@ -2,3 +2,8 @@
     display: none;
     color: red;
 }
+
+.error{
+    color: red;
+    font-weight: bold;
+}

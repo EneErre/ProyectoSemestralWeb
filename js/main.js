@@ -19,51 +19,57 @@ $(document).ready(function(){
     if(productosArray === null){
         productos = [
             {
-            codigo: "1",
+            codigo: 1,
             tipo: "Planta",
             nombre: "Rosa",
             descripcion: "Planta tipo flor: rosa",
             precio: 1000,
+            stock: 10,
             img: "img/png/flores/rosas.png"
         },
         {
-            codigo: "2",
+            codigo: 2,
             tipo: "Planta",
             nombre: "tulipan",
             descripcion: "Planta tipo flor: tulipan",
             precio: 1000,
+            stock: 10,
             img: "img/png/flores/tulipan.png"
         },
         {
-            codigo: "3",
+            codigo: 3,
             tipo: "Planta",
             nombre: "Girasol",
             descripcion: "Planta tipo flor: girasol",
             precio: 1000,
+            stock: 10,
             img: "img/png/flores/girasoles.png"
         },
         {
-            codigo: "4",
+            codigo: 4,
             tipo: "Herramienta",
             nombre: "Conjunto de herramientas",
             descripcion: "Conjunto de herramientas variado para trabajar en el jardin",
             precio: 10000,
+            stock: 10,
             img: "img/png/herramientasJardineria/conjuntoHerramientas.png"
         },
         {
-            codigo: "5",
+            codigo: 5,
             tipo: "Herramienta",
             nombre: "Pala",
             descripcion: "Gran pala para trabajos de jardineria",
             precio: 20000,
+            stock: 10,
             img: "img/png/herramientasJardineria/pala.png"
         },
         {
-            codigo: "6",
+            codigo: 6,
             tipo: "Herramienta",
             nombre: "Rastrillo",
             descripcion: "Rastrillo pequeño para trabajos de jardineria",
             precio: 2000,
+            stock: 10,
             img: "img/png/herramientasJardineria/rastrillo.png"
         }
             ];
@@ -87,13 +93,15 @@ $(document).ready(function(){
         let imagen = i.img;
         let nombre = i.nombre;
         let precio = i.precio;
+        let stock = i.stock;
         let descripcion = i.descripcion;
         let html = $(`<div class="row mt-3">
             <div class="card" style="width: 18rem;">
             <img src=${imagen} class="card-img-top" alt="${descripcion}}">
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
-                    <p class="card-text">Precio: ${precio}</p>                    
+                    <p class="card-text">Stock disponible: ${stock}</p>                    
+                    <p class="card-text">Precio: $${precio}</p>                    
                         <button id="btnAgregar" onclick="agregarProducto(${codigo})" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Agregar al carrito
                         </button>

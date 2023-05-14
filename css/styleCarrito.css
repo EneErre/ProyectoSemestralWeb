@@ -18,13 +18,13 @@ p{
     font-size: 30px;
 }
 
-.row{
+.rowProducto{
     border-bottom: solid black;
 }
 
-.btn{
+.btnCarrito{
     background-color: #c7a15f;
 }
-.btn:hover{
+.btnCarrito:hover{
     background-color: #966e29;
 }

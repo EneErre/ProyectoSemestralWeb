@@ -1,9 +1,10 @@
 /*
-    Este JS realiza las funciones de agregar el tiempo y la temperatura en tiempo real al navbar;
+    Este JS realiza las funciones de agregar el tiempo y la temperatura en tiempo real al navbarm, ademas cambia el tema;
 */
-
 $(function(){
     
+    console.log($("#cambiarTema"));
+
     //Codigo que obtiene la latitud y longituda
     const success = (position) => {
         const latitude = position.coords.latitude;
@@ -20,8 +21,8 @@ $(function(){
 
     navigator.geolocation.getCurrentPosition(success, error); 
 
-    
-    
+    setInterval(relojNavbar,1000);
+
 })
 
 
@@ -38,18 +39,18 @@ function apiClima(latitude, longitude){
             const ubicacion = data.name
             
             
-            $("#navbarTemperatura").append(`C°${temperatura}`);
+            $("#navbarTemperatura").text(`C°${temperatura}`);
          
             if ( temperatura < 20){
-                $("#txtMensajeTemperatura").append(`Hacen C°${temperatura} en ${ubicacion}. Abrigate o terminaras asi:`)
+                $("#txtMensajeTemperatura").text(`Hacen C°${temperatura} en ${ubicacion}. Abrigate o terminaras asi:`)
                 codigoPokemon = 875;
             }
             else if (temperatura >=20 && temperatura < 30){
-                $("#txtMensajeTemperatura").append(`Hacen C°${temperatura} en ${ubicacion}. Hace un buen clima, sale a disfrutar.`)
+                $("#txtMensajeTemperatura").text(`Hacen C°${temperatura} en ${ubicacion}. Hace un buen clima, sale a disfrutar.`)
                 codigoPokemon =272;
             }
             else{
-                $("#txtMensajeTemperatura").append(`Hacen C°${temperatura} en ${ubicacion}. ME DERRITOOO`)
+                $("#txtMensajeTemperatura").text(`Hacen C°${temperatura} en ${ubicacion}. ME DERRITOOO`)
                 codigoPokemon =126;
             }
 
@@ -66,3 +67,32 @@ function apiClima(latitude, longitude){
     
 
 }
+
+//Se obtiene la hora actual del sistema.
+function relojNavbar(){
+    let date = new Date
+    let hora = date.getHours();
+    let minutos = date.getMinutes();
+    let segundos = date.getSeconds();
+    
+    $("#navbarHora").text(`${hora}:${minutos}:${segundos}`);
+    
+}
+
+
+//Funcion para cambiar el tema.
+$("#cambiarTema").on("change",function(){
+    if ($("#cambiarTema").val() == "on"){
+        $("#cambiarTema").attr("value","of") 
+        $("#navbar").attr("class","navbar navbar-expand-lg navbar-oscuro");
+        $(".bodyClaro").attr("class","bodyOscuro")
+        $(".headerProductosClaros").attr("class","headerProductosOscuros")
+    } else{
+        $("#cambiarTema").attr("value","on") 
+        console.log($("#cambiarTema").val());
+        $("#navbar").attr("class","navbar navbar-expand-lg navbar-claro");
+        $(".headerProductosOscuros").attr("class","headerProductosClaros")
+    }
+    
+    
+})

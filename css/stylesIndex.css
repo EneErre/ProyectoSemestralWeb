@@ -23,14 +23,21 @@
     opacity: 0.5;
 }
 
-.mensajeInicio {
-    text-align: center;
-    font-size: 50px;
-    color: #f6d573;
-    
-}
-body{
+
+.bodyClaro{
     background-color: #ffffff;
+}
+
+.bodyOscuro{
+    background-color: black;
+}
+
+.headerProductosClaros{
+    color: white;
+}
+
+.headerProductosOscuros{
+    color: black;
 }
 
 .card img{
@@ -38,15 +45,4 @@ body{
     width: 275px;
 }
 
-.col a{
-    text-decoration: none;
-    color: #464232;
-}
-.col a :hover{
-    color: #bb8a44;
-}
 
-
-.mensajeInicio{
-    color: #f6d573;
-}

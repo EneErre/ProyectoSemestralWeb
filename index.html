@@ -13,10 +13,8 @@
   <title>Inicio</title>
 </head>
 
-<body>
-
-
-    <nav class="navbar navbar-expand-lg navbar-custom">
+<body class="bodyClaro">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-claro">
       <div class="container-fluid">
           <a class="navbar-brand" href="index.html">L4G</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,27 +39,27 @@
                       </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle colorNavbar" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Administrador
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="agregarProducto.html">Agregar producto</a></li>
-                        <li><a class="dropdown-item" href="#">Listar Productos</a></li>
+                        <li><a class="dropdown-item colorNavbar" href="agregarProducto.html">Agregar producto</a></li>
+                        <li><a class="dropdown-item colorNavbar" href="listarProductos.html">Listar Productos</a></li>
                     </ul>
                 </li>
                   
               </ul>
                      
               <div class="container-fluid" id="navbarSeccionHoraTemperatura">
-                <div class="row">
+                <div class="row mt-2">
                   
-                  <div class="col">
-                    <span class="navbar-brand mb-0 h1">Hora</span>
+                  <div class="col colTiempo">
+                    <span id="navbarHora" class="navbar-brand h1 colorNavbar"></span>
                   </div>
-                  <div class="col pe-2">
+                  <div class="col">
                     <div class="dropdown">
-                      <a id="navbarTemperatura" class="navbar-brand" href="#"></a>
+                      <p id="navbarTemperatura" class="navbar-brand navbarClaro"></p>
                       <div class="dropdown-content">
                           <div id="mensajeTemperatura">
                             <p id="txtMensajeTemperatura"></p>
@@ -69,6 +67,15 @@
                           </div>
                       </div>
                   </div>
+                  </div>
+                  <div class="col pt-2">
+                    
+                    
+                    <div class="form-check form-switch">
+                      <input id="cambiarTema" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault"><i class="material-icons">remove_red_eye</i></label>
+                    </div>
+                    
                   </div>
                 </div>
                 
@@ -176,7 +183,7 @@
 
 
   <div class="container text-center">
-    <h1>Productos destacados</h1>
+    <h1 class="headerProductosClaros">Productos destacados</h1>
     <div id="rowProductosDestacados" class="row row-cols-lg-3">
     </div>
   </div>

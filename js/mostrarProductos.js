@@ -9,11 +9,13 @@ $(function(){
         let imagen = i.img;
         let nombre = i.nombre;
         let precio = i.precio;
+        let stock = i.stock;
         let html = $(`<div class="col mt-3">
             <div class="card" style="width: 18rem;">
             <img src=${imagen} class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
+                    <p class="card-text">Stock disponible: ${stock}</p>    
                     <p class="card-text">Precio: ${precio}</p>
                     <button id="btnAgregar" onclick="agregarProducto(${codigo})" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Agregar al carrito
